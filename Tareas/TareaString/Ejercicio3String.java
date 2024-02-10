@@ -1,4 +1,3 @@
-package vscodejava;
 
 import java.util.Scanner;
 
