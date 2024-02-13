@@ -1,4 +1,4 @@
-package TareaBucles;
+package Tareas.TareaBucles;
 
 import java.util.Scanner;
 

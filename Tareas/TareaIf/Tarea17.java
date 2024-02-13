@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package TareaIf;
+package Tareas.TareaIf;
 
 import java.util.Scanner;
 
@@ -47,6 +47,7 @@ public
     while (contador < 6);
 
     System.out.printf("La cantidad de aprobados es %d, los condicionados son %d y los suspensos %d", aprobados, condicionados, suspensos);
+  teclado.close();
   }
 
 }

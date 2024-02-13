@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package TareaIf;
+package Tareas.TareaIf;
 
 import java.util.Scanner;
 
@@ -54,7 +54,7 @@ public
     System.out.println("La media de los números positivos es: " + mediaPositivos);
     System.out.println("La media de los números negativos es : " + mediaNegativos);
     System.out.println("La cantidad de ceros introducidos es: " + ceros);
-
+teclado.close();
   }
 
 }

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package TareaIf;
+package Tareas.TareaIf;
 
 /**
  * Escribir todos los números del 100 al 0 de 7 en 7.

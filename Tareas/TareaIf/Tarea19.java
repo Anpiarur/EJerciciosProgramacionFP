@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package TareaIf;
+package Tareas.TareaIf;
 
 /**
  * Necesitamos mostrar un contador con 5 dígitos (X-X-X-X-X), que muestre los

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package TareaIf;
+package Tareas.TareaIf;
 
 import java.util.Scanner;
 
@@ -49,5 +49,7 @@ public
     System.out.printf("Y su media de estatura es %.1f\n", mediaEstatura);
     System.out.println("Hay " + contadorEdad + " alumnos con mas de 18 años");
     System.out.println("Hay " + contadorEstatura + " alumnos con mas de 1.75 de altura");
+
+    teclado.close();
   }
 }
