@@ -2,8 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Bucles;
-import java.util.Scanner;
+package Tareas.Bucles;
 
 /**
  * 1.Se pide por pantalla, un número, para comprobar si es primo. Si se
