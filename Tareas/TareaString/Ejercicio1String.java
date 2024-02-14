@@ -1,4 +1,4 @@
-
+package Tareas.TareaString;
 
 import java.util.Scanner;
 /**

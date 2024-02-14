@@ -1,5 +1,5 @@
 
-
+package Tareas.TareaString;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -22,6 +22,7 @@ public class Ejercicio4String {
         if (coincide.matches()) {
             System.out.println("Enhorabuena, el email contiene @ y punto");
         } 
+        sc.close();
     }
       
 }

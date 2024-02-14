@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package TareaMath3;
+package Tareas.TareaMath3;
 
 /**
  * 2. Dado el siguiente código, diseña el enunciado del ejercicio y explica el

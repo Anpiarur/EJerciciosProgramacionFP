@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package TareaMath3;
+package Tareas.TareaMath3;
 
 /**
  * 4.Diseña el enunciado de un ejercicio para trabajar con : Math (4 métodos)

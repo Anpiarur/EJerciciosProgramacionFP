@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package TareaMath3;
+package Tareas.TareaMath3;
 
 import java.util.Scanner;
 
@@ -61,6 +61,6 @@ public class Ejercicio1 {
 
             }
         }
-
+sc.close();
     }
 }

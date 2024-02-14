@@ -2,8 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package TareasStringExtra;
-
+package Tareas.TareasStringExtra;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -39,6 +38,7 @@ public class Ejercicio4 {
         if (coincide.matches()) {
             System.out.println("Enhorabuena, el email contiene @ y punto");
         } 
+        sc.close();
     }
       
 }
