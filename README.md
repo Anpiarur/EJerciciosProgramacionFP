@@ -1,2 +1,2 @@
-# ProgramacionDigitech
+# Programacion
 Ejercicios realizados en Java. 
