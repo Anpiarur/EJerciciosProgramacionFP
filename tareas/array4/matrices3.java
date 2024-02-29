@@ -15,22 +15,23 @@ import java.util.regex.Pattern;
  * Cada letra se debe almacenar en una celda.
  * Se debe comprobar si hay algún valor repetido en alguna celda.
  */
+
 public class matrices3 {
     public static void main(String[] args) {
-
         // Objeto scanner para peticion de palabra
         Scanner sc = new Scanner(System.in);
 
         // Declaración de variables e inicialización
         String palabra = " ";
         char silaba = ' ';
-        char silabaRepetida = ' ';
+        int contador = 0;
 
         // Boolean de comprobacion
         boolean correcto;
-        boolean repetido;
+        boolean repetido = false;
+
         /*
-         * Bloque de codigo para controlar excepciones.
+         * Bloque de código para controlar excepciones.
          * En este caso quiero que se ingrese una palabra
          * que solo contengan letras entre A-Z.
          */
@@ -54,35 +55,53 @@ public class matrices3 {
 
             } catch (InputMismatchException e) {
                 System.out.println("Ocurrió un error de tipo: " + e.getMessage());
-                sc.nextLine(); // Limpiar el búfer del escáner
-                correcto = false; // Reinicializar para permitir al usuario ingresar una nueva palabra
+                // Limpiar el búfer del escáner
+                sc.nextLine();
+                // Reinicializar para permitir al usuario ingresar una nueva palabra
+                correcto = false;
             }
         } while (!correcto);
 
-        // Array char con los caráctares de la palabra ingresada
-        char letras[] = new char[palabra.length()];
+        // Array char con los caracteres de la palabra ingresada
+        char letras[] = palabra.toCharArray();
+        // Array char para los repetidos
+        char repetidos[] = new char[letras.length];
 
-        // Recorrido para rellenar el array
-        // Inicializo repetido
-        repetido = false;
+        // Recorrido para verificar letras repetidas
         for (int i = 0; i < letras.length; i++) {
-            repetido = false;// Reinicializo la bariable para cada recorrido
-            silaba = palabra.charAt(i);
-            for (int j = 0; j < letras.length; j++) {
-                letras[j] = palabra.charAt(j);
-                repetido = silaba == letras[j];
-                if (repetido) {
-                    silabaRepetida = silaba;
+            silaba = letras[i];
+            repetido = false;
+            // Se empieza en i+1 para comparar la letra siguiente a la que estoy en ese
+            // momento
+            for (int j = i + 1; j < letras.length; j++) {
+                if (silaba == letras[j]) {
+                    repetido = true;
+
+                    // Verifica si la letra ya está en el array antes de agregarla
+                    boolean esta = false;
+                    for (int k = 0; k < contador; k++) {
+                        if (repetidos[k] == silaba) {
+                         esta = true;
+                        }
+                    }
+
+                    if (!esta) {
+                        repetidos[contador] = silaba;
+                        contador++;
+                    }
                 }
             }
         }
-        if (repetido) {
-            System.out.printf("Se repiten la letra %s en la palabra ingresada", silabaRepetida);
-        }else{
-            System.out.println("No se repiten letras");
+
+        if (contador > 0) {
+            System.out.println("Se repiten letras");
+            for (int i = 0; i < contador; i++) {
+                System.out.println(repetidos[i]);
+            }
+        } else {
+            System.out.println("No se repiten letras en la palabra ingresada.");
         }
 
         sc.close();
     }
-
 }
