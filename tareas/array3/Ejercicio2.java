@@ -1,4 +1,4 @@
-package tareas.matrices;
+package tareas.array3;
 
 /*
  * 2. Crear dos matrices de nxn y sumar sus valores, los resultados se deben almacenar en otra

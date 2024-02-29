@@ -1,4 +1,4 @@
-package tareas.matrices;
+package tareas.array3;
 
 /*
  * Práctica Final Matrices

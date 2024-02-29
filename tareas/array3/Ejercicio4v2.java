@@ -1,4 +1,4 @@
-package tareas.matrices;
+package tareas.array3;
 
 public class Ejercicio4v2 {
     public static void main(String[] args) {
