@@ -1,20 +1,9 @@
-package tareas.arraylist;
+package tareas.arraylist2;
+/*Realiza un programa donde almacenamos los nombres de animales, dichos nombres se
+almacenan en un Arraylist. Se piden valores hasta que se teclea la palabra SALIR. */
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
-/**
- * Ejercicio4
- * Realizar un programa donde se almacenan los nombres de diferentes animales.
- * Se
- * piden nombres por pantalla hasta que se introduce la palabra salir
- * Se deben visualizar todos los valores introducidos y el número de valores que
- * se
- * introducen.
- */
-public class Ejercicio4 {
+public class Ejercicio2 {
     public static void main(String[] args) {
-
         // Instanciamos la clase Scanner
         Scanner sc = new Scanner(System.in);
 
@@ -41,6 +30,6 @@ public class Ejercicio4 {
             System.out.println(animal);
         }
         System.out.println("Número de elementos introducidos " + animales.size());
-sc.close();
+        sc.close();
     }
 }

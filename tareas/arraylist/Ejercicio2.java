@@ -55,5 +55,6 @@ public class Ejercicio2 {
                 imprimir = sc.next();
             }
         }
+        sc.close();
     }
 }
