@@ -1,6 +1,8 @@
 package tareas.arraylist2;
+import java.util.ArrayList;
 /*Realiza un programa donde almacenamos los nombres de animales, dichos nombres se
 almacenan en un Arraylist. Se piden valores hasta que se teclea la palabra SALIR. */
+import java.util.Scanner;
 
 public class Ejercicio2 {
     public static void main(String[] args) {
