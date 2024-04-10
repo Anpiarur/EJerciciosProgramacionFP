@@ -1,12 +1,10 @@
 package tareas.poo.tarea1;
 
-import java.util.Scanner;
-
 public class Aula {
 
     // Constructor
-    public Aula(int identificador, int capacidad, Materias materia, Profesor profesor) {
-        this.identificador = identificador;
+    public Aula( int capacidad, Materias materia, Profesor profesor) {
+        this.identificador=siguienteId++;
         this.capacidad = capacidad;
         this.materia = materia;
         this.estudiantes = new Estudiante[capacidad];
@@ -21,9 +19,7 @@ public class Aula {
         return identificador;
     }
 
-    public void setIdentificador(int identificador) {
-        this.identificador = identificador;
-    }
+    
 
     public int getCapacidad() {
         return  capacidad;
@@ -130,50 +126,10 @@ public class Aula {
         }
     }
 
-    // Metodo para crear implementacion aula por peticion de pantalla
-    public static Aula crearAula() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Introduzca los datos del aula");
-
-        System.out.println("Identificadorr: ");
-        int identificadorAula = scanner.nextInt();
-        System.out.println("Capacidad del aula: ");
-        int capacidadAula = scanner.nextInt();
-        scanner.nextLine(); // Consumir la nueva línea pendiente después de nextInt()
-        System.out.println("Materia a impartir: ");
-        System.out.println("1. MATEMATICAS");
-        System.out.println("2. FILOSOFÍA");
-        System.out.println("3. FÍSICA");
-        System.out.print("Seleccione una opción: ");
-        Materias materiaAula;
-        int opcion = scanner.nextInt();
-        scanner.nextLine(); // Consumir la nueva línea pendiente después de nextInt()
-        switch (opcion) {
-            case 1:
-                materiaAula = Materias.MATEMATICAS;
-                break;
-            case 2:
-                materiaAula = Materias.FILOSOFIA;
-                break;
-            case 3:
-                materiaAula = Materias.FISICA;
-                break;
-            default:
-                System.out.println("Opción inválida. Se asignará MATEMATICAS por defecto.");
-                materiaAula = Materias.MATEMATICAS;
-                break;
-        }
-        scanner.nextLine();
-        // Llama al método crearProfesor para crear un profesor
-        Profesor profesorAula = Profesor.crearProfesor();
-
-        return new Aula(identificadorAula, capacidadAula, materiaAula, profesorAula);
-
-    }
 
     // Campos de clase
     private int identificador;
+    private int siguienteId=1; //Para hacer la id autoincremental
     private int capacidad;
     private Materias materia;
     private Estudiante[] estudiantes;

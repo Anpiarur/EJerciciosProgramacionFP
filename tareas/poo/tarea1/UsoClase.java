@@ -14,7 +14,7 @@ public class UsoClase {
         Estudiante estudiante3 = new Estudiante("Pilar", 22, Sexo.MUJER, 4);
 
         // Crear un aula y configurarla
-        Aula aula1 = new Aula(1, 20, Materias.MATEMATICAS, profesor1);
+        Aula aula1 = new Aula( 20, Materias.MATEMATICAS, profesor1);
 
         aula1.agregarEstudiante(estudiante1);
         aula1.agregarEstudiante(estudiante2);
@@ -42,11 +42,11 @@ public class UsoClase {
         int alumnos = scanner.nextInt();
         Estudiante[] estudiantes = new Estudiante[alumnos];
         for (int i = 0; i < alumnos; i++) {
-             estudiantes[i] = Estudiante.crearEstudiante();
+             estudiantes[i] = InputManager.crearEstudiante();
         }
 
         //Implementacion aula
-        Aula aula2 = Aula.crearAula();
+        Aula aula2 = InputManager.crearAula();
 
         //Añadir alumnos al aula 
         for (int i = 0; i < alumnos && i < aula2.getCapacidad(); i++) {
