@@ -18,16 +18,7 @@ public Materias getMateria() {
 public void setMateria(Materias materia) {
     this.materia = materia;
 }
-//Polimorfismo de edad y asistencia
-@Override
-public void setEdad(int edad) {
-    if (edad >= 25 && edad <= 65) { // Profesores tienen entre 25 y 65 años
-        super.setEdad(edad);
-    } else {
-        System.out.println("La edad del profesor debe estar entre 25 y 65 años.");
-    }
-}
-
+//Polimorfismo de asistencia
 @Override
 protected void generarAsistencia() {
     Random rand = new Random();

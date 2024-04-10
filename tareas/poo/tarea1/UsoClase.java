@@ -5,7 +5,13 @@ import java.util.Scanner;
 public class UsoClase {
 
     public static void main(String[] args) {
+
+        /*Primera forma de implementar clases y metodos de forma manual, se pueden cometer errores al
+         * no estar acotados los requisitos, que tengo definidos en InputManager, por eso 
+         * lo dejo solo como un comentario.
+         
         // Crear un profesor
+        
         Profesor profesor1 = new Profesor("Juan", 35, Sexo.HOMBRE, Materias.MATEMATICAS);
 
         // Crear estudiantes
@@ -31,8 +37,9 @@ public class UsoClase {
 
         // Modificar la nota del estudiante
         estudiante3.setCalificacion(5);
+        */
 
-        // Segunda forma de implementacion mediante Scanner
+        // Segunda forma de implementacion mediante Scanner (clase InputManager)
         Scanner scanner = new Scanner(System.in);
         //Implementacion profesor va incluida en la implementacion del aula 
        
