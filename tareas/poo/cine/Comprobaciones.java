@@ -1,4 +1,4 @@
-package tareas.poo.tarea2asiento_manual;
+package tareas.poo.cine;
 
 public class Comprobaciones {
 

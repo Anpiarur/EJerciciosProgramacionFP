@@ -1,4 +1,4 @@
-package tareas.poo.tarea1;
+package tareas.poo.colegio;
 
 public class Aula {
 

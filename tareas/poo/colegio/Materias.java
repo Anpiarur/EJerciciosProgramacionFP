@@ -1,4 +1,4 @@
-package tareas.poo.tarea1;
+package tareas.poo.colegio;
 
 /**
  * Enumeración que representa diferentes materias.
